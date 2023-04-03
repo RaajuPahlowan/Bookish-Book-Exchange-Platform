@@ -1,5 +1,6 @@
 <?php
     session_start();
+    require_once '../models/userModel.php';
     
     if(isset($_REQUEST['submit'])){
 
@@ -11,19 +12,15 @@
             echo "Null username/password";
         }else{
 
-            $file = fopen('user.txt', 'r');
-            while(!feof($file)){
-                $data = fgets($file);
-                $user = explode('|', $data);
-                if($username == trim($user[0]) && $password == trim($user[1])){
-                    $flag = true;
-                }
-            }
-            if($flag){
-                $_SESSION['flag'] = "true";
+            $status = auth($username, $password);
+            if($status){
                 $_SESSION['username'] = $username;
                 setcookie('flag', 'true', time()+300, '/');
-                header('location: adminHome.php');
+                header('location: ../views/home.php');
+            }else{
+                header('location: ../views/login.php?msg=error');
+            }
+        }
             }else{
                 
                 header('location: login.php?msg=error');

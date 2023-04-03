@@ -18,14 +18,12 @@
                         <nav>
                             <ul>
                                 <li><a href="#">Home</a></li>
-                                <li><a href="moderatorOverview.php">Overview</a></li>
-                                <li><a href="moderatorOrderDashboard.php">Order Dashboard</a></li>
+                                
+                                <li><a href="memberOrderDashboard.php">Order Dashboard</a></li>
                                 <li><a href="#">Add Books</a></li>
                                 <li><a href="profile.php">Profile</a></li>
                                 <li><a href="#">Profile Settings</a></li>
-                                <li><a href="#">Manage Members</a></li>
                                 <li><a href="#">Notifications</a></li>
-                                <li><a href="#">Transactions</a></li>
         
                                 
                             </ul>
@@ -100,7 +98,7 @@
                                       </li>
                         </ul>
                     </main>
-                                      <a href="logout.php">logout</a>
+                                      <a href="../controllers/logout.php">logout</a>
                     <footer>
                         <p>&copy; 2023 Book Exchange Platform. All rights reserved.</p>
                     </footer>

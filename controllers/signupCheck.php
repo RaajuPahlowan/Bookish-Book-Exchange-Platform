@@ -1,5 +1,6 @@
 <?php
     session_start();
+    require_once "../models/userModel.php";
     
     if(isset($_REQUEST['submit'])){
     
@@ -10,11 +11,13 @@
         if($username == "" && $password == "" && $email == ""){
             echo "Null username/password/email";
         }else{
-            $file = fopen('user.txt', 'a');
-            $data = $username."|".$password."|".$email."\r\n";
-            fwrite($file, $data);
-            fclose($file);
-            header('location: login.php');
+            $user = ['username'=> $username, 'password'=> $password, 'email'=> $email];
+            $status = addUser($user);
+            if($status){
+                header('location: ../views/login.php');
+            }else{
+                echo "DB error, try again";
+            }
         }
     }else{
         echo "invalid request!";
