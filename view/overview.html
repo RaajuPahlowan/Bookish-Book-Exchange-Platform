@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/css/overview.css">
+    <link rel="stylesheet" href="../asset/css/profile.css">
+    <script src="../asset/script/profile_toggle.js"></script>
+    <title>Dashboard</title>
+</head>
+
+
+<body>
+<div class="side-menu">
+    <div class="brand-name">
+        <img src="../asset/image/logo.png">
+    </div>
+    <br>
+    <br>
+    <ul>
+        <li><a href="../view/admin_homepage.html">Home</a></li>
+        <li><a href="../view/overview.html">Overview</a></li>
+        <li><a href="../view/order_dashboard.html">Order Dashboard</a></li>
+        <li>Reviews</li>
+        <li>Settings</li>
+        <li>Help</li>
+        <li>Logout</li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="header">
+        <div class="nav">
+            <div class="search">
+                <input type="text" placeholder="Search..">
+                <button type="submit"><img src="../asset/image/search.png" alt=""></button>
+            </div>
+            <div class="user">
+                <a href="#" class="btn">Add New</a>
+                <img src="../asset/image/notification.png" alt="">
+
+                <div class="img-case">
+                    <img src="../asset/image/user.png" class="user-pic" onclick="toggleMenu()">
+
+                    <div class="sub-menu-wrap" id="subMenu">
+
+                        <div class="sub-menu">
+                            <div class="user-info">
+                                <h2>Raaju Pahlowan</h2>
+                            </div>
+                            <hr>
+                            <a href="#" class="sub-menu-link">
+                                <p>Edit Profile</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <p>Settings</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <p>Logout</p>
+                                <span>></span>
+                            </a>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <div class="cards">
+            <div class="card">
+                <div class="box">
+                    <h1>2090</h1>
+                    <h3>Total Members</h3>
+                </div>
+                <div class="icon-case">
+                    <img src="../asset/image/member.png" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <h1>5643</h1>
+                    <h3>Total Books</h3>
+                </div>
+                <div class="icon-case">
+                    <img src="../asset/image/book.png" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <h1>3452</h1>
+                    <h3>Books Exchanged</h3>
+                </div>
+                <div class="icon-case">
+                    <img src="../asset/image/exchange.png" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <h1>12923</h1>
+                    <h3>Total Revenue</h3>
+                </div>
+                <div class="icon-case">
+                    <img src="../asset/image/revenue.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="content-2">
+            <div class="recent-transactions">
+                <div class="title">
+                    <h2>Recent Transactions</h2>
+                    <a href="#" class="btn">View All</a>
+                </div>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Order Id</th>
+                        <th>Total Bill (tk)</th>
+                    </tr>
+                    <tr>
+                        <td>Raaju Pahlowan</td>
+                        <td>rajupahlowan@gmail.com</td>
+                        <td>0089</td>
+                        <td>322</td>
+                    </tr>
+                    <tr>
+                        <td>Raaju Pahlowan</td>
+                        <td>rajupahlowan@gmail.com</td>
+                        <td>0089</td>
+                        <td>546</td>
+                    </tr>
+                    <tr>
+                        <td>Raaju Pahlowan</td>
+                        <td>rajupahlowan@gmail.com</td>
+                        <td>0089</td>
+                        <td>765</td>
+                    </tr>
+                    <tr>
+                        <td>Raaju Pahlowan</td>
+                        <td>rajupahlowan@gmail.com</td>
+                        <td>0089</td>
+                        <td>981</td>
+                    </tr>
+                    <tr>
+                        <td>Raaju Pahlowan</td>
+                        <td>rajupahlowan@gmail.com</td>
+                        <td>0089</td>
+                        <td>354</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="new-members">
+                <div class="title">
+                    <h2>New Members</h2>
+                    <a href="#" class="btn">View All</a>
+                </div>
+                <table>
+                    <tr>
+                        <th>Profile</th>
+                        <th>Email</th>
+                        <th>Option</th>
+                    </tr>
+                    <tr>
+                        <td><img src="../asset/image/user.png" alt=""></td>
+                        <td>Barryallen@gmail.com</td>
+                        <td><img src="../asset/image/setting.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../asset/image/user.png" alt=""></td>
+                        <td>jigshaw@gmail.com</td>
+                        <td><img src="../asset/image/setting.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../asset/image/user.png" alt=""></td>
+                        <td>wolverine@gmail.com</td>
+                        <td><img src="../asset/image/setting.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../asset/image/user.png" alt=""></td>
+                        <td>darthvader@gmail.com</td>
+                        <td><img src="../asset/image/setting.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../asset/image/user.png" alt=""></td>
+                        <td>johnwick@gmail.com</td>
+                        <td><img src="../asset/image/setting.png" alt=""></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
