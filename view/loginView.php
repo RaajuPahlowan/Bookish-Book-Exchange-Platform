@@ -1,5 +1,5 @@
 <?php
-include('../controller/signupController.php');
+include('../controller/loginController.php');
 ?>
 
 <body>
@@ -22,7 +22,7 @@ include('../controller/signupController.php');
     
 
         </table>
-        <button type="submit" name="signup">signup</button>
+        <button type="submit" name="login">login</button>
     </form>
 
 </body>
