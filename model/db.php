@@ -44,6 +44,35 @@ class db
         }
     }
 
+
+    function SeedReview($conn)
+    {
+        $sql = "INSERT INTO review (username, reviewtext, rating, userimage)
+        VALUES ('Coco Goose', 'raaju',200, 'asset/image/book_1.jpg'),
+               ('Sub Letter', 'Bruce',200, 'asset/image/book_2.jpg'),
+               ('Westpart', 'Banner', 200,'asset/image/book_3.jpg'),
+               ('Beautifully', 'Stark', 200,'asset/image/book_4.jpg'),
+               ('Clever Lands', 'Rissie', 200,'asset/image/book_5.jpg'),
+               ('Francis S', 'Morty Smith', 200,'asset/image/book_6.jpg'),
+               ('The Art City', 'Rick', 200,'asset/image/book_7.png'),
+               ('Music', 'Gilmour', 200,'asset/image/book_8.png'),
+               ('Free Fall', 'Peter Parker', 200,'asset/image/book_9.jpg'),
+               ('Kichu Ekta', 'Keo Ekjon', 200,'asset/image/book_10.png'),
+               ('Boring Girls', 'Sara Taylor', 200,'asset/image/book_11.jpg'),
+               ('Give Thanks', 'Rick', 200,'asset/image/book_12.png'),
+               ('West', 'Bannery', 200,'asset/image/book_13.png'),
+               ('Veggie', 'Anna', 200,'asset/image/book_14.png'),
+               ('Black History', 'Someone', 200,'asset/image/book_15.png')";
+
+        if ($conn->query($sql)) {
+            echo "Books Data seeded successfully";
+
+        } else {
+            echo "Error seeding data: " . $conn->error;
+        }
+    }
+
+
     function AuthUser($conn, $userName, $password)
     {
         $query = "select username,role from activedirectory where " .
