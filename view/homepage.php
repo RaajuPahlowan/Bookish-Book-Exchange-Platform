@@ -86,8 +86,8 @@
                 <div class="featurde_book_tag">
                     <h2>' . $title . '</h2>
                     <p class="writer">' . $author . '</p>
-                    <p class="book_price">' . $price . ' tk (Bangla)</p>
-                    <a href="#" class="f_btn">Buy Now</a>
+                    <p class="book_price">' . $price . ' BDT</p>
+                    <a href="#" class="f_btn">GET IT NOW</a>
                 </div>               
             </div>';
             }
